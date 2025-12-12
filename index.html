@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Craft & Code Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link href="img/icon.ico" rel="icon">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Lewati ke konten utama</a>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-wrap">
+            <a href="#" class="brand" aria-label="Beranda Craft & Code">
+                <img src="img/icon.png" class="img-icon" alt="icon">
+                <span class="brand-name">Craft & Code</span>
+            </a>
+            <nav class="site-nav" aria-label="Navigasi utama">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="sr-only">Buka menu</span>
+                </button>
+                <ul id="primary-menu" class="nav-list">
+                    <li><a href="#layanan">Layanan</a></li>
+                    <li><a href="#template">Template</a></li>
+                    <li><a href="#pelatihan">Pelatihan</a></li>
+                    <li><a href="#prestasi">Prestasi</a></li>
+                    <li><a href="#kontak" class="btn btn-third">Mulai</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- Slider -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <h1>Hybrid Agency untuk Multimedia & Pemrograman</h1>
+                    <p>Kami menggabungkan kreativitas dan teknologi: editing & desain, development & data analytics,
+                        plus template portfolio dan pelatihan terstruktur.</p>
+                    <div class="hero-actions">
+                        <a href="#layanan" class="btn btn-third">Lihat Layanan</a>
+                        <a href="#pelatihan" class="btn btn-outline">Ikuti Pelatihan</a>
+                    </div>
+                    <div class="trust-bar">
+                        <span class="trust-item">50+ Klien</span>
+                        <span class="trust-dot"></span>
+                        <span class="trust-item">Sertifikasi Instruktur</span>
+                        <span class="trust-dot"></span>
+                        <span class="trust-item">Template Siap Pakai</span>
+                    </div>
+                </div>
+
+                <div class="hero-slider" aria-label="Slider prestasi dan layanan">
+                    <div class="slider-track">
+                        <!-- Slide 1 -->
+                        <article class="slide" aria-roledescription="slide">
+                            <img src="img/desain.jpeg"
+                                alt="Desainer" />
+                            <div class="slide-caption">
+                                <h3>Branding & Desain</h3>
+                                <p>Identitas visual untuk startup, deck pitch, dan kit sosial media.</p>
+                            </div>
+                        </article>
+                        <!-- Slide 2 -->
+                        <article class="slide">
+                            <img src="img/developer.jpeg"
+                                alt="Developer" />
+                            <div class="slide-caption">
+                                <h3>Web Development</h3>
+                                <p>Website cepat, aman, dan responsif untuk skala produk.</p>
+                            </div>
+                        </article>
+                        <!-- Slide 3 -->
+                        <article class="slide">
+                            <img src="img/data.jpeg" width="100%"
+                                alt="Data Analyst" />
+                            <div class="slide-caption">
+                                <h3>Data Analytics</h3>
+                                <p>Dashboard KPI, automasi laporan, dan insight bisnis.</p>
+                            </div>
+                        </article>
+                        <!-- Slide 4 -->
+                        <article class="slide">
+                            <img src="img/pelatihan.jpeg"
+                                alt="Workshop" />
+                            <div class="slide-caption">
+                                <h3>Pelatihan Intensif</h3>
+                                <p>Kurasi kurikulum pemrograman, data science, dan multimedia.</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="slider-controls">
+                        <button class="control prev" aria-label="Slide sebelumnya">‹</button>
+                        <button class="control next" aria-label="Slide berikutnya">›</button>
+                    </div>
+                    <div class="slider-dots" role="tablist" aria-label="Navigasi slide"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Layanan -->
+        <section id="layanan" class="section">
+            <div class="container">
+                <h2>Layanan kami</h2>
+                <p>Craft & Code menyediakan solusi end-to-end untuk kebutuhan multimedia dan pemrograman Anda.</p>
+                <div class="cards">
+                    <article class="card">
+                        <div class="card-icon">🎨</div>
+                        <h3>Multimedia</h3>
+                        <ul class="feature-list">
+                            <li><strong>Editing:</strong> Video, audio, color grading, motion.</li>
+                            <li><strong>Desain:</strong> Branding, UI kit, materi promosi.</li>
+                            <li><strong>Content:</strong> Social assets dan campaign.</li>
+                        </ul>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-icon">💻</div>
+                        <h3>Development</h3>
+                        <ul class="feature-list">
+                            <li><strong>Web/App:</strong> Frontend, backend, integrasi API.</li>
+                            <li><strong>Performance:</strong> SEO teknis, aksesibilitas, CI/CD.</li>
+                            <li><strong>Security:</strong> Auth, audit, best practices.</li>
+                        </ul>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-icon">📊</div>
+                        <h3>Data analytics</h3>
+                        <ul class="feature-list">
+                            <li><strong>Insight:</strong> Eksperimen, Rekomendasi dan Inovasi.</li>
+                            <li><strong>Data prep:</strong> ETL, pembersihan data, pipeline.</li>
+                            <li><strong>Dashboard:</strong> KPI, BI, reporting otomatis.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Template -->
+        <section id="template" class="section alt">
+            <div class="container">
+                <h2>Template portfolio</h2>
+                <p>Template website siap pakai untuk menampilkan karya dan profil profesional Anda.</p>
+                <div class="templates">
+                    <article class="template-card">
+                        <h3>Starter Minimal</h3>
+                        <p>Ringkas dan cepat, ideal untuk fresh graduate.</p>
+                        <div class="tag-row">
+                            <span class="tag">HTML/CSS</span><span class="tag">Javascript</span><span
+                                class="tag">Responsif</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">Preview</a>
+                    </article>
+                    <article class="template-card">
+                        <h3>Creator Showcase</h3>
+                        <p>Galeri visual & video untuk desainer dan editor.</p>
+                        <div class="tag-row">
+                            <span class="tag">Tailwindcss</span><span class="tag">AOS</span><span
+                                class="tag">React</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">Preview</a>
+                    </article>
+                    <article class="template-card">
+                        <h3>Dev & Data Pro</h3>
+                        <p>Projek teknis, studi kasus, dan hosting ngebut.</p>
+                        <div class="tag-row">
+                            <span class="tag">NextJS</span><span class="tag">React</span><span class="tag">SQL</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">Preview</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pelatihan -->
+        <section id="pelatihan" class="section">
+            <div class="container">
+                <h2>Pelatihan terstruktur</h2>
+                <p>Program berjenjang untuk meningkatkan skill di pemrograman, data science, dan multimedia.</p>
+                <div class="train-grid">
+                    <article class="train-card">
+                        <h3>Pemrograman</h3>
+                        <p>Fundamental algoritma, web modern, dan best practice produksi.</p>
+                        <ul class="module-list">
+                            <li><strong>Dasar:</strong> Git, HTML/CSS, JS.</li>
+                            <li><strong>Lanjut:</strong> Framework, API, testing.</li>
+                            <li><strong>Profesional:</strong> DevOps dasar, keamanan.</li>
+                        </ul>
+                        <a href="#kontak" class="btn btn-primary">Daftar kelas</a>
+                    </article>
+                    <article class="train-card">
+                        <h3>Data science</h3>
+                        <p>Analisis, pemodelan, dan visualisasi yang berorientasi bisnis.</p>
+                        <ul class="module-list">
+                            <li><strong>Dasar:</strong> Statistik, Python, pandas.</li>
+                            <li><strong>Lanjut:</strong> ML klasik, evaluasi model.</li>
+                            <li><strong>Profesional:</strong> MLOps, deployment.</li>
+                        </ul>
+                        <a href="#kontak" class="btn btn-primary">Daftar kelas</a>
+                    </article>
+                    <article class="train-card">
+                        <h3>Multimedia</h3>
+                        <p>Produksi konten end-to-end: pra-produksi hingga finishing.</p>
+                        <ul class="module-list">
+                            <li><strong>Dasar:</strong> Desain prinsip, editing basic.</li>
+                            <li><strong>Lanjut:</strong> Motion, color, sound design.</li>
+                            <li><strong>Profesional:</strong> Workflow, deliverables.</li>
+                        </ul>
+                        <a href="#kontak" class="btn btn-primary">Daftar kelas</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prestasi -->
+        <section id="prestasi" class="section alt">
+            <div class="container">
+                <h2>Prestasi & studi kasus</h2>
+                <div class="case-grid">
+                    <article class="case-card">
+                        <h3>Skala startup SaaS</h3>
+                        <p>Meningkatkan konversi 28% lewat redesign & optimasi performa.</p>
+                    </article>
+                    <article class="case-card">
+                        <h3>Pipeline data otomatis</h3>
+                        <p>Menghemat 40 jam/bulan dengan ETL & dashboard KPI.</p>
+                    </article>
+                    <article class="case-card">
+                        <h3>Kampanye multimedia</h3>
+                        <p>Reach organik naik 3× dengan motion & content strategy.</p>
+                    </article>
+                </div>
+                <a href="#kontak" class="btn btn-outline">Lihat detail studi kasus</a>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta">
+            <div class="container cta-wrap">
+                <h2>Siap membangun sesuatu yang berdampak?</h2>
+                <p>Ceritakan kebutuhan Anda, kami siapkan solusi yang tepat.</p>
+                <a href="#kontak" class="btn btn-third">Konsultasi gratis</a>
+            </div>
+        </section>
+
+        <!-- Kontak -->
+        <section id="kontak" class="section">
+            <div class="container contact-grid">
+                <form action="https://formsubmit.co/craftcode50@gmail.com" method="POST" class="contact-form" aria-label="Form kontak">
+
+                    <div class="form-row">
+                        <label for="nama">Nama</label>
+                        <input id="nama" name="nama" type="text" placeholder="Nama lengkap" required />
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="email@domain.com" required />
+                    </div>
+                    <div class="form-row">
+                        <label for="layananSelect">Minat layanan</label>
+                        <select id="layananSelect" name="layanan">
+                            <option value="Pilih Layanan" hidden>-Pilih Layanan-</option>
+                            <option value="multimedia">Multimedia</option>
+                            <option value="development">Development</option>
+                            <option value="data">Data analytics / data science</option>
+                            <option value="pelatihan">Pelatihan</option>
+                            <option value="template">Template portfolio</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="pesan">Pesan</label>
+                        <textarea id="pesan" name="pesan" rows="4" placeholder="Jelaskan kebutuhan Anda"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-third">Kirim</button>
+                    <p class="form-note">Dengan mengirim, Anda menyetujui untuk dihubungi via email.</p>
+                </form>
+                <aside class="contact-aside">
+                    <h3>Info cepat</h3>
+                    <ul class="info-list">
+                        <li><strong>Lokasi:</strong> Jl. Ring Road Utara, Ngringin, Condongcatur, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281</li>
+                        <li><strong>Jam kerja:</strong> Senin - Jumat, 09.00 - 17.00 WIB</li>
+                        <li><strong>Respons:</strong> Selama Jam Kerja</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <div class="brand brand-footer">
+                    <img src="img/icon.png" class="img-icon" alt="icon">
+                    <span class="brand-name">Craft & Code</span>
+                </div>
+            </div>
+            <nav class="footer-nav" aria-label="Navigasi footer">
+                <a href="#layanan">Layanan</a>
+                <a href="#template">Template</a>
+                <a href="#pelatihan">Pelatihan</a>
+                <a href="#prestasi">Prestasi</a>
+                <a href="#kontak">Kontak</a>
+            </nav>
+            <div class="footer-meta">
+                <p>© 2025 Developer Craft & Code.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
